@@ -1,0 +1,39 @@
+# Java bytecode files
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+
+# VS Code artifacts
+.vscode/
+*.code-workspace
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build directories
+build/
+target/
+out/
+bin/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~

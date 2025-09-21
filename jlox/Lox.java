@@ -8,6 +8,16 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Arrays;
 
+/*
+ * TODOs
+ * 
+ * -- Error handling abstraction --
+ * Some kind of of ErrorReporter interface
+ * that gets passed to the scaner and parser and which will decide how
+ * exactly render/stdout/etc errors.
+ * 
+*/
+
 // Lox is a scripting language, which means it executes directly from source. 
 
 public class Lox {
@@ -57,6 +67,8 @@ public class Lox {
     }
   }
 
+  /// It's good engineering practice to separate the code that generates
+  /// the errors from the code that reports them.
   static void error(int line, String message) {
     reportErr(line, "", message);
   }
@@ -65,22 +77,4 @@ public class Lox {
     System.err.println("[line " + line + "] Error" + where + ": " + message);
     hadError = true;
   }
-}
-
-class Scanner {
-  private String source;
-
-  public Scanner(String source) {
-    this.source = source;
-  }
-
-  public List<Token> scanTokens() {
-    //
-
-    return Collections.emptyList();
-  }
-}
-
-class Token {
-
 }
