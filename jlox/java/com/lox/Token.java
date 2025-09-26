@@ -1,3 +1,5 @@
+package com.lox;
+
 /*
  * When we take the lexeme and bundle it together with that other data, the
  * result is a token. At the point that we recognize a lexeme, we also remember

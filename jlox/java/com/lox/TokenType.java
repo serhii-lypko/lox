@@ -1,3 +1,4 @@
+package com.lox;
 
 enum TokenType {
   // Single-character tokens.
