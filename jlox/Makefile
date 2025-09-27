@@ -6,7 +6,7 @@ PACKAGE_PATH = com/lox
 MAIN_CLASS = com.lox.Lox
 
 # Java source files (relative to SRC_DIR)
-JAVA_FILES = $(SRC_DIR)/$(PACKAGE_PATH)/Lox.java $(SRC_DIR)/$(PACKAGE_PATH)/Scanner.java $(SRC_DIR)/$(PACKAGE_PATH)/Token.java $(SRC_DIR)/$(PACKAGE_PATH)/TokenType.java
+JAVA_FILES = $(SRC_DIR)/$(PACKAGE_PATH)/Lox.java $(SRC_DIR)/$(PACKAGE_PATH)/Scanner.java $(SRC_DIR)/$(PACKAGE_PATH)/Token.java $(SRC_DIR)/$(PACKAGE_PATH)/TokenType.java $(SRC_DIR)/$(PACKAGE_PATH)/Parser.java
 # Class files will be generated in the same structure
 CLASS_FILES = $(JAVA_FILES:.java=.class)
 
