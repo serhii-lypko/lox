@@ -1,6 +1,1 @@
-var a = 10;
-bar b = 12;
-
-var c = a + b;
-
-print c;
+var greet = "Hello world";

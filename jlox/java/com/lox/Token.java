@@ -28,7 +28,9 @@ class Token {
     this.line = line;
   }
 
+  /// Thiw will be used for display as well
   public String toString() {
-    return type + " " + lexeme + " " + literal;
+    // return type + " " + lexeme + " " + literal;
+    return "[type: " + type + "]  [lexeme: " + lexeme + "]  [literal: " + literal + "]  [line: " + line + "]";
   }
 }
